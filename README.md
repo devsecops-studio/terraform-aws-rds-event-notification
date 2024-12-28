@@ -14,7 +14,7 @@ This Terraform module configures [Amazon RDS event notifications](https://docs.a
 
 ```hcl
 module "rds_notifications" {
-  source = "path/to/module"
+  source = "devsecops-studio/rds-event-notification/aws"
 
   name          = "rds-notifications"
   slack_webhook = var.slack_webhook_url
